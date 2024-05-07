@@ -46,7 +46,7 @@ function App() {
         <h1 className="font-bold text-2xl">Write a note!</h1>
         <p className="text-gray-500 font-bold">ps: dont spam notes pls</p>
         <input className="border-gray-300 border-2 rounded-xl px-2 py-2" maxLength={24} placeholder="Enter name..." required value={noteName} onChange={handleNameChange}/>
-        <textarea className="border-gray-300 border-2 rounded-xl px-2 py-2 h-32" placeholder="Enter note content..." maxLength={256} value={noteContent} onChange={handleNoteChange} required></textarea>
+        <textarea className="border-gray-300 border-2 rounded-xl px-2 py-2 h-32 resize-none" placeholder="Enter note content..." maxLength={256} value={noteContent} onChange={handleNoteChange} required ></textarea>
         <button type="submit" className="border-gray-300 border-2 p-4 font-bold rounded-xl shadow-md hover:bg-gray-100 transition-all duration-200" onClick={addNote}>Send Note</button>
       </form>
     </div>
